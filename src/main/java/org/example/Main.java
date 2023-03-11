@@ -63,7 +63,17 @@ public class Main {
                             robot.keyRelease(KeyEvent.VK_F4);
                             break;
                         case "b3": // мигание
-
+                            for(int i = 0; i < 10; i ++){
+                                robot.keyPress(KeyEvent.VK_CAPS_LOCK);
+                                robot.delay(500);
+                                robot.keyRelease(KeyEvent.VK_CAPS_LOCK);
+                                robot.keyPress(KeyEvent.VK_NUM_LOCK);
+                                robot.delay(500);
+                                robot.keyRelease(KeyEvent.VK_NUM_LOCK);
+                                robot.keyPress(KeyEvent.VK_SCROLL_LOCK);
+                                robot.delay(500);
+                                robot.keyRelease(KeyEvent.VK_SCROLL_LOCK);
+                            }
                             break;
                         case "b4": // выход
                             System.exit(0);
